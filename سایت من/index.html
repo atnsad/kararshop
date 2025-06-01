@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>حکاکی کرار - محسن امیری</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #fffbe6;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ff5722;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #e64a19;
+    }
+
+    header {
+      background: #ff7043;
+      color: white;
+      padding: 20px 30px;
+      text-align: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-container img {
+      height: 120px;
+      border-radius: 12px;
+    }
+
+    .logo-container span {
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    nav ul li a {
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      background: #ffccbc;
+      color: #bf360c;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: #ffe0b2;
+      padding: 40px 20px;
+      border-radius: 15px;
+      text-align: center;
+      margin-bottom: 40px;
+      box-shadow: 0 6px 12px rgba(255, 152, 0, 0.3);
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      color: #bf360c;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #5d4037;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .signature {
+      font-family: 'Cursive', cursive;
+      font-size: 2rem;
+      color: #d84315;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    section.products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 25px;
+      margin-bottom: 60px;
+    }
+
+    .product-card {
+      background: #fff3e0;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(255, 152, 0, 0.25);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4);
+    }
+
+    .product-card .info h3 {
+      color: #bf360c;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .product-card .info p {
+      font-size: 0.95rem;
+      color: #6d4c41;
+    }
+
+    footer {
+      background: #ff7043;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+    }
+
+    @media (max-width: 600px) {
+      .logo-container {
+        flex-direction: column;
+      }
+
+      .logo-container span {
+        font-size: 2rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      window.scrollTo(0, 0);
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="IMG_1246.jpeg" alt="لوگو" />
+      <span>حکاکی کرار</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">درباره من</a></li>
+        <li><a href="#products">کارها</a></li>
+        <li><a href="#contact">تماس با من</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <h1>محسن امیری - حکاکی روی سنگ‌های قیمتی</h1>
+      <p>
+        سلام! من محسن امیری هستم و تخصصم حکاکی روی انواع سنگ‌های قیمتی است.  
+        امضای کاری من <span class="signature">کرار</span> است و با عشق و دقت بالا روی هر سنگ حکاکی انجام می‌دهم.
+      </p>
+    </section>
+
+    <section class="products" id="products">
+      <div class="product-card">
+        <div class="info">
+          <h3>حکاکی سنتی روی عقیق</h3>
+          <p>طرح‌های زیبا و خاص با امضای کرار روی سنگ عقیق با دقت و ظرافت بالا.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="info">
+          <h3>حکاکی سفارشی روی سنگ‌های قیمتی</h3>
+          <p>انجام سفارشات خاص و منحصر به فرد شما با امضای کرار و کیفیت عالی.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="info">
+          <h3>حکاکی‌های چند کلمه‌ای</h3>
+          <p>حکاکی‌هایی که حاوی دو کلمه تا پنج کلمه می‌باشد.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="info">
+          <h3>حکاکی سنتی چپ‌نویس قدما قاجاری</h3>
+          <p>حکاکی‌های چپ‌نویسی که به سبک قدیم و در مکتب خوشنویسی قدما انجام شده است.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="info">
+          <h3>حکاکی مدرن و ترکیب‌های خاص و به‌روز</h3>
+          <p>حکاکی‌های پُر کاری که ترکیب‌های آن تکراری نیست و برای دوستانی که سفارش داده‌اند طراحی شده است.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="text-align:center; padding: 40px 20px; background: #fff3e0; border-radius: 15px;">
+      <h2 style="color:#bf360c; margin-bottom: 15px;">تماس با من</h2>
+      <p>برای سفارش و مشاوره با من در واتساپ تماس بگیرید:</p>
+      <p style="font-weight:bold; font-size:1.2rem; color:#d84315;">
+        <a href="https://wa.me/989189337008" target="_blank" rel="noopener noreferrer" style="color:#d84315;">
+          0918-933-7008
+        </a>
+      </p>
+      <p>
+        یا ایمیل بزنید:
+        <a href="mailto:mohsen3241871376@gmail.com">mohsen3241871376@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 حکاکی کرار | ساخته شده توسط محسن امیری
+  </footer>
+</body>
+</html>
